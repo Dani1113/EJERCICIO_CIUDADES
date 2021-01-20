@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EJERCICIO_CIUDADES</string>
+    <string name="nueva_provincia">NUEVA PROVINCIA</string>
+    <string name="nombre">NOMBRE:</string>
+    <string name="insertar_provincia">INSERTAR PROVINCIA</string>
+    <string name="borrar_provincia">BORRAR PROVINCIA</string>
+    <string name="actualizar_provincia">Actualizar provincia</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="id">ID:</string>
+</resources>
