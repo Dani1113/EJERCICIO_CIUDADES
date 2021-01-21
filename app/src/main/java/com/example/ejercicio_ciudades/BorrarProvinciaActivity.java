@@ -29,9 +29,7 @@ public class BorrarProvinciaActivity extends AppCompatActivity implements Adapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_borrar_provincia);
         Spinner spProvincias = (Spinner) findViewById(R.id.spProvincias);
-        provincias = new ArrayList<Provincia>();
-        provincias.add(new Provincia("madrid"));
-        //provincias = ProvinciaController.obtenerProvincias();
+        provincias = ProvinciaController.obtenerProvincias();
         spProvincias.setOnItemSelectedListener(this);
         adaptador = new ArrayAdapter<Provincia>(this, R.layout.support_simple_spinner_dropdown_item, provincias);
         spProvincias.setAdapter(adaptador);
