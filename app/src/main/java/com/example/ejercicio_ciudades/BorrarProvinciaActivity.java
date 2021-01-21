@@ -62,6 +62,7 @@ public class BorrarProvinciaActivity extends AppCompatActivity implements Adapte
                 boolean borradoOk = ProvinciaController.borrarProvincia(pSeleccionada);
                 if(borradoOk){
                     mostrarToast("Provincia borrada correctamente");
+                    //prueba
                     adaptador.remove(pSeleccionada);
                 }else{
                     mostrarToast("Error al borrar la provincia");
