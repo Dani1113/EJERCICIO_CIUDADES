@@ -20,7 +20,7 @@ public class ActualizarProvinciaActivity1 extends AppCompatActivity implements A
     public static final String EXTRA_OBJETO_PROVINCIA = "ProvinciaEnviada";
     private Spinner spActualizarProvincia;
     private ArrayList<Provincia> provincias = null;
-    public static ArrayAdapter<Provincia> adaptador;
+    public static ArrayAdapter<Provincia> adaptador = null;
     private Provincia pSeleccionada = null;
 
     @Override
@@ -38,11 +38,8 @@ public class ActualizarProvinciaActivity1 extends AppCompatActivity implements A
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        try{
+        if(provincias != null){
             pSeleccionada = (Provincia) spActualizarProvincia.getItemAtPosition(position);
-            Toast.makeText(this, "Has elegido la provincia" + pSeleccionada.toString(), Toast.LENGTH_SHORT).show();
-        }catch (Exception e){
-            System.out.println("Error");
         }
     }
 

@@ -62,8 +62,8 @@ public class ProvinciaController {
         return provinciasDevueltas;
     }
 
-    public static boolean borrarProvincia(Provincia pSeleccionada) {
-        FutureTask t = new FutureTask(new TareaBorrarProvincia(pSeleccionada));
+    public static boolean borrarProvincia(Provincia p) {
+        FutureTask t = new FutureTask(new TareaBorrarProvincia(p));
         ExecutorService es = Executors.newSingleThreadExecutor();
         es.submit(t);
         boolean borradoOk = false;

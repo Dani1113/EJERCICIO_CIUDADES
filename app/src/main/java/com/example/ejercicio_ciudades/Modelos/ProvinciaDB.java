@@ -40,8 +40,7 @@ public class ProvinciaDB {
 
 	public static ArrayList<Provincia> obtenerProvincias() {
 		Connection conexión = BaseDB.conectarConBaseDeDatos();
-		if(conexión == null)
-		{
+		if(conexión == null) {
 			return null;
 		}
 		ArrayList<Provincia> provinciasDevueltas = new ArrayList<Provincia>();

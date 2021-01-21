@@ -8,35 +8,34 @@
 
     <Button
         android:id="@+id/btNuevaProvincia"
-        android:layout_width="168dp"
-        android:layout_height="49dp"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
         android:layout_marginTop="76dp"
         android:onClick="nuevaProvincia"
         android:text="@string/nueva_provincia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btBorrarProvincia"
-        android:layout_width="175dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="229dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
         android:onClick="borrarProvincia"
         android:text="@string/borrar_provincia"
         app:layout_constraintEnd_toEndOf="@+id/btNuevaProvincia"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="@+id/btNuevaProvincia"
         app:layout_constraintTop_toBottomOf="@+id/btNuevaProvincia" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="@string/actualizar_provincia"
+        android:layout_width="238dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
         android:onClick="actualizarProvincia"
+        android:text="@string/actualizar_provincia"
         app:layout_constraintEnd_toEndOf="@+id/btBorrarProvincia"
         app:layout_constraintStart_toStartOf="@+id/btBorrarProvincia"
         app:layout_constraintTop_toBottomOf="@+id/btBorrarProvincia" />

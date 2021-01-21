@@ -19,16 +19,16 @@ import java.util.ArrayList;
 
 public class BorrarProvinciaActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private Spinner spProvincias;
-    private ArrayList<Provincia> provincias = null;
-    private ArrayAdapter adaptador;
-    private Provincia pSeleccionada = null;
+    Spinner spProvincias = null;
+    ArrayList<Provincia> provincias = null;
+    ArrayAdapter<Provincia> adaptador = null;
+    Provincia pSeleccionada = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_borrar_provincia);
-        Spinner spProvincias = (Spinner) findViewById(R.id.spProvincias);
+        spProvincias = (Spinner) findViewById(R.id.spProvincias);
         provincias = ProvinciaController.obtenerProvincias();
         spProvincias.setOnItemSelectedListener(this);
         adaptador = new ArrayAdapter<Provincia>(this, R.layout.support_simple_spinner_dropdown_item, provincias);
@@ -37,11 +37,7 @@ public class BorrarProvinciaActivity extends AppCompatActivity implements Adapte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        try{
-            pSeleccionada = (Provincia) spProvincias.getItemAtPosition(position);
-        }catch (Exception e){
-            System.out.println("Error");
-        }
+        pSeleccionada = (Provincia) spProvincias.getItemAtPosition(position);
     }
 
     @Override

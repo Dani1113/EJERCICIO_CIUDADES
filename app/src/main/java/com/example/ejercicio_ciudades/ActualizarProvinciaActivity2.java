@@ -38,9 +38,9 @@ public class ActualizarProvinciaActivity2 extends AppCompatActivity {
         if(actualizadoOk){
             ActualizarProvinciaActivity1.adaptador.remove(pSeleccionada);
             ActualizarProvinciaActivity1.adaptador.add(p);
-            Toast.makeText(this, "Actualizado correctamente", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Provincia actualizada correctamente", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "Error al actualizar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Error al actualizar la provincia", Toast.LENGTH_SHORT).show();
         }
     }
 }
