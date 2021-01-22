@@ -7,4 +7,8 @@
     <string name="actualizar_provincia">Actualizar provincia</string>
     <string name="siguiente">SIGUIENTE</string>
     <string name="id">ID:</string>
+    <string name="lista_de_ciudades">LISTA DE CIUDADES</string>
+    <string name="ciudad">ciudad</string>
+    <string name="habitantes">HABITANTES:</string>
+    <string name="provincia">PROVINCIA:</string>
 </resources>
