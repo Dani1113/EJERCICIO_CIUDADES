@@ -33,7 +33,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/txtProvincia"
             android:layout_width="match_parent"
             android:layout_height="43dp"
             android:text="@string/provincia"
