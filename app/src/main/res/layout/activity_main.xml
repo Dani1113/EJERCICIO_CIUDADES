@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/btNuevaProvincia"
-        android:layout_width="220dp"
-        android:layout_height="55dp"
+        android:layout_width="223dp"
+        android:layout_height="62dp"
         android:layout_marginTop="76dp"
         android:onClick="nuevaProvincia"
         android:text="@string/nueva_provincia"
@@ -19,24 +19,37 @@
 
     <Button
         android:id="@+id/btBorrarProvincia"
-        android:layout_width="229dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
         android:onClick="borrarProvincia"
         android:text="@string/borrar_provincia"
         app:layout_constraintEnd_toEndOf="@+id/btNuevaProvincia"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btNuevaProvincia"
         app:layout_constraintTop_toBottomOf="@+id/btNuevaProvincia" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="238dp"
+        android:id="@+id/btActualizarProvincia"
+        android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="76dp"
         android:onClick="actualizarProvincia"
         android:text="@string/actualizar_provincia"
         app:layout_constraintEnd_toEndOf="@+id/btBorrarProvincia"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btBorrarProvincia"
         app:layout_constraintTop_toBottomOf="@+id/btBorrarProvincia" />
+
+    <Button
+        android:id="@+id/btMostrarCiudades"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:onClick="mostrarCiudades"
+        android:text="@string/mostrar_ciudades"
+        app:layout_constraintEnd_toEndOf="@+id/btActualizarProvincia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btActualizarProvincia"
+        app:layout_constraintTop_toBottomOf="@+id/btActualizarProvincia" />
 </androidx.constraintlayout.widget.ConstraintLayout>
