@@ -26,6 +26,23 @@ public class ListaCiudadesAdapter extends RecyclerView.Adapter<CiudadViewHolder>
         inflater = LayoutInflater.from(c);
     }
 
+    //GETTERS & SETTERS
+    public ArrayList<Ciudad> getListaCiudades() {
+        return listaCiudades;
+    }
+
+    public void setListaCiudades(ArrayList<Ciudad> listaCiudades) {
+        this.listaCiudades = listaCiudades;
+    }
+
+    public Context getC() {
+        return c;
+    }
+
+    public void setC(Context c) {
+        this.c = c;
+    }
+
     @NonNull
     @Override
     public CiudadViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

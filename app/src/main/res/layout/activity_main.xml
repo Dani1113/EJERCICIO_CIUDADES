@@ -44,7 +44,7 @@
     <Button
         android:id="@+id/btMostrarCiudades"
         android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:layout_height="57dp"
         android:layout_marginTop="76dp"
         android:onClick="mostrarCiudades"
         android:text="@string/mostrar_ciudades"

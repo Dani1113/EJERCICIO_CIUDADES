@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesCiudadActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/detalles_ciudad"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fotoCiudad"
+        android:layout_width="164dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ciudad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/ciudad" />
+
+    <TextView
+        android:id="@+id/txtNombreDetalle"
+        android:layout_width="206dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/nombre"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/txtHabitantesDetalle"
+        android:layout_width="383dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/habitantes"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fotoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreDetalle" />
+
+    <TextView
+        android:id="@+id/txtProvinciaDetalle"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/provincia"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtHabitantesDetalle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtHabitantesDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/txtHabitantesDetalle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

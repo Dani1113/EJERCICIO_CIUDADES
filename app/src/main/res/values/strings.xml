@@ -12,4 +12,5 @@
     <string name="habitantes">HABITANTES:</string>
     <string name="provincia">PROVINCIA:</string>
     <string name="mostrar_ciudades">MOSTRAR CIUDADES</string>
+    <string name="detalles_ciudad">DETALLES CIUDAD</string>
 </resources>
