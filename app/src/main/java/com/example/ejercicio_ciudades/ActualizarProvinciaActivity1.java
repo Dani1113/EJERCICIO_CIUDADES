@@ -18,6 +18,9 @@ import java.util.ArrayList;
 public class ActualizarProvinciaActivity1 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     public static final String EXTRA_OBJETO_PROVINCIA = "ProvinciaEnviada";
+    //public static final String EXTRA_FOTO = "FotoEnviada";
+    ////public static final String EXTRA_NOMBRE = "NombreEnviado";
+    //public static final String EXTRA_ID = "IdEnviada";
     private Spinner spActualizarProvincia;
     private ArrayList<Provincia> provincias = null;
     public static ArrayAdapter<Provincia> adaptador = null;
@@ -54,7 +57,17 @@ public class ActualizarProvinciaActivity1 extends AppCompatActivity implements A
             return;
         }else{
             Intent intent = new Intent(this, ActualizarProvinciaActivity2.class);
-            intent.putExtra(EXTRA_OBJETO_PROVINCIA, pSeleccionada);
+            intent.putExtra(EXTRA_OBJETO_PROVINCIA, pSeleccionada); //-> No vale
+            //Bitmap foto = pSeleccionada.getFoto();
+            //ImageView imgProvincia = new ImageView(this);
+            //if(foto != null){ -> Si la foto obtenida es null mostrará la imagen por defecto (la que indicas en el image view del diseño)
+            //   imagenProvincia.setText(foto);
+            //   intent.putExtra(EXTRA_IMAGEN_PROVINCIA, (Parcelable) imgProvincia);
+            //}else {
+            //   intent.putExtra(EXTRA_IMAGEN_PROVINCIA, (Parcelable) null);
+            //}
+            //intent.putExtra(EXTRA_OBJETO_PROVINCIA, pSeleccionada.getNombre());
+            //intent.putExtra(EXTRA_OBJETO_PROVINCIA, pSeleccionada.getIdProvincia());
             startActivity(intent);
         }
     }

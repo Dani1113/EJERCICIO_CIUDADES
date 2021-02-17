@@ -16,17 +16,23 @@ public class ActualizarProvinciaActivity2 extends AppCompatActivity {
     private EditText edtActutalizarID = null;
     private EditText edtActualizarNombre = null;
     private Provincia pSeleccionada = null;
+    //private ImageView imagenProvincia = null; -> Imagen que mostrará las ciudades obtenidas, en el diseño poner las medidas de la imagen que recogemos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actualizar_provincia_avtivity2);
         Intent intent = getIntent();
-        pSeleccionada = (Provincia) intent.getSerializableExtra(ActualizarProvinciaActivity1.EXTRA_OBJETO_PROVINCIA);
+        pSeleccionada = (Provincia) intent.getSerializableExtra(ActualizarProvinciaActivity1.EXTRA_OBJETO_PROVINCIA); //-> No vale
+        //edtActutalizarID.setText(intent.getIntExtra(ActualizarProvinciaActivity1.EXTRA_ID));
+        //edtActutalizarID.setText(intent.getStringExtra(ActualizarProvinciaActivity1.EXTRA_NOMBRE));
+        //imagenProvincia = intent.getParcelableExtra(ActualizarProvinciaActivity1.EXTRA_FOTO)
         edtActutalizarID = (EditText) findViewById(R.id.edtProvinciaID);
         edtActualizarNombre = (EditText) findViewById(R.id.edtProvinciaNombre);
         edtActutalizarID.setText((String.valueOf(pSeleccionada.getIdprovincia())));
         edtActualizarNombre.setText(String.valueOf(pSeleccionada.getNombre()));
+        //imagenProvincia = (ImageView) findViewById(R.id.imagenProvincia);
+
         edtActutalizarID.setEnabled(false);
     }
 
